@@ -1,0 +1,209 @@
+/* Style the showcase section */
+.showcase {
+    position: relative;
+    text-align: center;
+    color: #fff; /* เปลี่ยนสีข้อความในสไลด์เป็นสีขาวหรือตามที่คุณต้องการ */
+  }
+  
+  .showcase img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .showcase .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* กำหนดสีพื้นหลังสำหรับ overlay ตามที่คุณต้องการ */
+  }
+  
+  .showcase .text {
+    position: absolute;
+    top: 50%; /* ทำให้ตำแหน่งอยู่ตรงกลางตามความสูงของสไลด์ */
+    left: 50%; /* ทำให้ตำแหน่งอยู่ตรงกลางตามความกว้างของสไลด์ */
+    transform: translate(-50%, -50%); /* ย้ายข้อความและปุ่ม Explore กลับไปยังตำแหน่งที่ถูกจัดสรรในตัวรูปภาพ */
+    text-align: center;
+  }
+  
+  .showcase h2 {
+    font-size: 36px; /* เปลี่ยนขนาดตัวอักษรของหัวข้อใหญ่ในสไลด์ */
+  }
+  
+  .showcase h1 {
+    font-size: 48px; /* เปลี่ยนขนาดตัวอักษรของชื่อหรือตามที่คุณต้องการ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของชื่อ */
+  }
+  
+  .showcase p {
+    font-size: 18px; /* เปลี่ยนขนาดตัวอักษรของข้อความคำแนะนำ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของข้อความคำแนะนำ */
+  }
+  
+  .showcase a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* เปลี่ยนสีพื้นหลังของปุ่ม Explore ตามที่คุณต้องการ */
+    color: #333; /* เปลี่ยนสีข้อความปุ่ม Explore ตามที่คุณต้องการ */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px; /* เพิ่มมุมขอบปุ่ม */
+  }
+  
+  /* Style the social list */
+.social {
+    display: flex;
+    justify-content: left; /* จัดตำแหน่งรายการโซเชียลให้อยู่ตรงกลางแนวนอน */
+    position: absolute;
+    bottom: 20px; /* ระยะห่างด้านล่างของรูปภาพ */
+    left: 0;
+    right: 0;
+  }
+  
+  .social li {
+    list-style: none; /* เอาเครื่องหมายหัวข้อรายการออก */
+    margin: 0 10px; /* ระยะห่างระหว่างรายการโซเชียล */
+  }
+  
+  .social a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%; /* ทำให้ปุ่มโซเชียลเป็นรูปวงกลม */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟคการเปลี่ยนสีพื้นหลังเมื่อโซเชียลถูกโฮเวอร์ */
+  }
+  
+  .social a img {
+    width: 30px; /* ปรับขนาดรูปภาพโซเชียลตามที่คุณต้องการ */
+    height: 30px;
+  }
+  
+  .social a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* กำหนดสีพื้นหลังที่จางลงเมื่อโซเชียลถูกโฮเวอร์ */
+  }
+ /* Style the about section */
+.about {
+    padding: 60px 0; /* กำหนดระยะห่างด้านบนและด้านล่างของเซกชัน "about" */
+  }
+  
+  .about .row {
+    display: flex;
+    align-items: center; /* จัดให้รูปภาพและข้อความอยู่ในแนวเดียวกันตามแนวนอน */
+  }
+  
+  .about img {
+    width: 400px; /* ปรับขนาดของรูปภาพตามที่คุณต้องการ */
+    height: 400px;
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    margin-left: 10px; /* ระยะห่างด้านซ้ายของรูปภาพจากข้อความ */
+  }
+  
+  /* เพิ่มขนาดและรูปแบบของข้อความ */
+  .about h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .about p {
+    font-size: 16px;
+  }
+  
+  /* สไตล์ของข้อความถูกต้อง */
+  .about .fst-italic {
+    font-style: italic;
+  }
+  .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skills-column {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  .skills h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* สีข้อความ */
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555; /* สีข้อความ */
+  }
+  /*Portfolio.html */
+  /* CSS สำหรับหน้า Portfolio */
+
+/* กำหนดรูปแบบส่วนของ Portfolio */
+.portfolio {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .portfolio h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* กำหนดรูปแบบของรายการผลงาน */
+  .portfolio-item {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-item img {
+    width: 200px; /* ปรับขนาดของรูปภาพตามที่คุณต้องการ */
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .portfolio-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .portfolio-item p {
+    font-size: 16px;
+  }
+  
+  /* เพิ่มการเลื่อนรูปภาพเมื่อคลิก */
+  .portfolio-item img:hover {
+    transform: scale(1.1);
+  }
+   /*Transcript.html */
+   /* CSS สำหรับหน้า transcript.html */
+.transcript {
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหากึ่งกลางแนวนอน */
+    align-items: center; /* จัดให้เนื้อหากึ่งกลางแนวตั้ง */
+    height: 100vh; /* ให้สูงเท่ากับหน้าจอเพื่อให้กล่องอยู่กึ่งกลาง */
+  }
+  
+  .image-container {
+    max-width: 85%; /* ไม่ให้รูปภาพใหญ่เกินขนาดของเนื้อหา */
+    text-align: center; /* จัดให้รูปอยู่กึ่งกลางใน div */
+  }
+  
+  .image-container img {
+    max-width: 85%; /* ไม่ให้รูปภาพใหญ่เกินขนาดของ div */
+    height: auto; /* ป้องกันรูปภาพเดินยาว */
+    display: block; /* กำหนดให้รูปภาพเป็นบล็อกเพื่อความแน่นอน */
+    margin: 0 auto; /* จัดให้รูปภาพอยู่กึ่งกลางแนวนอน */
+  }
